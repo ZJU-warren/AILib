@@ -1,3 +1,7 @@
+"""
+    preceptron algorithm will be converge iff training data can be linearly separated
+"""
+
 import numpy as np
 from Tools import mathLib
 

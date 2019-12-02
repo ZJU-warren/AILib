@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4368d0e-9edc-4977-aca8-00d93121a1e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SupervisedLib/Perceptron.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/mathLib.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SupervisedLib/Perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/SupervisedLib/Perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/mathLib.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/mathLib.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +172,7 @@
       <updated>1575102551866</updated>
       <workItem from="1575102553027" duration="14541000" />
       <workItem from="1575188363007" duration="6281000" />
-      <workItem from="1575265809418" duration="5509000" />
+      <workItem from="1575265809418" duration="6283000" />
     </task>
     <servers />
   </component>
