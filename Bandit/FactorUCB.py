@@ -4,7 +4,7 @@ from FactorItem import FactorItem
 
 class FactorUCB:
     def __init__(self, d, l, N, W,
-                 lambda_1, lambda_2, alpha_u, alpha_a):             # line 1
+                 lambda_1, lambda_2, alpha_u, alpha_a):                 # line 1
         # basic setting
         self.d = d; self.l = l;  self.N = N
         self.W = W
@@ -54,6 +54,8 @@ class FactorUCB:
 
         self.AI = np.linalg.inv(self.A)
         self.theta = self.AI.dot(self.b)                                # line 13
+        
         self.items_pool[self.rec_item]\
             .update(self.mat_theta_Wu[:self.d, :],
                     self.mat_theta_Wu[self.d:, :], r)                   # line [14 - 17]
+
