@@ -2,6 +2,7 @@ import numpy as np
 import Tools.DistanceLib as DisLib
 from Tools.Heap import Heap
 
+
 class Node:
     # node's pointers
     lson = None
@@ -121,7 +122,7 @@ class KNN:
     # predict the label of x
     def predict(self, x):
         nearest, distance = self.locate_nearest(self.root, x, 0)
-        print(self.X[nearest.data_index])
+        print(self.X[nearest.data_index], self.y[nearest.data_index])
 
     # output the tree structure
     def print_tree(self, root, deep=0):
@@ -134,10 +135,10 @@ class KNN:
 
 if __name__ == '__main__':
     X = np.array(
-        [[2, 3], [9, 6], [5, 4],
-         [4, 7], [8, 1], [7, 2]])
+        [[2, 3], [8, 1], [7, 2],
+         [4, 7], [9, 6], [5, 4]])
 
-    y = np.array([1, 1, -1, 1, 1, 1])
+    y = np.array([-1, -1, -1, 1, 1, 1])
     knn_clf = KNN(X, y)
     # knn_clf.print_tree(knn_clf.root)
-    knn_clf.predict(np.array([2, 4.5]))
+    knn_clf.predict(np.array([5, 3]))

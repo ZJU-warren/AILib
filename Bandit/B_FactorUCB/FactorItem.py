@@ -1,10 +1,12 @@
+import sys; sys.path.append('../')
+
 from MathTools import *
 
 
 class FactorItem:
-    def __init__(self, lambda_2, d, l, x):
+    def __init__(self, lambda_2, d_, l, x):
         # basic setting
-        self.d = d; self.l = l
+        self.d_ = d_; self.l = l
         self.lambda_2 = lambda_2
         self.x = x
 
@@ -19,7 +21,7 @@ class FactorItem:
         self.CI = np.linalg.inv(self.C)
 
     def calculate(self, user, WT, N):
-        temp = np.zeros((self.d + self.l, N))
+        temp = np.zeros((self.d_ + self.l, N))
         temp[:, user] = join(self.x, self.v)
         self.vec_0X0V_WT = vec(temp.dot(WT))
         return join(self.x, self.v).T, self.vec_0X0V_WT, self.CI
